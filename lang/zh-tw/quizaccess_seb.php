@@ -21,6 +21,7 @@
  * @author     Luca Bösch <luca.boesch@bfh.ch>
  * @author     Andrew Madden <andrewmadden@catalyst-au.net>
  * @author     Dmitrii Metelkin <dmitriim@catalyst-au.net>
+ * @translate  Hsu Zangmen <neko_0xff@protonmail.com>
  * @copyright  2019 Catalyst IT
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -54,11 +55,11 @@ $string['event:templatedisabled'] = '己經關閉 SEB 模版';
 $string['event:templateenabled'] = '己經啟用 SEB 模版';
 $string['event:templateupdated'] = '己經上傳 SEB 模版';
 $string['exitsebbutton'] = '離開 Safe Exam Browser';
-$string['filemanager_sebconfigfile'] = 'Upload Safe Exam Browser config file';
-$string['filemanager_sebconfigfile_help'] = 'Please upload your own Safe Exam Browser config file for this quiz.';
+$string['filemanager_sebconfigfile'] = '上傳 Safe Exam Browser 設定檔';
+$string['filemanager_sebconfigfile_help'] = '請為此測驗上傳您自己的Safe Exam Browser設定檔。';
 $string['filenotpresent'] = '請上傳 SEB 設定檔';
-$string['fileparsefailed'] = 'The uploaded file could not be saved as a SEB config file.';
-$string['httplinkbutton'] = 'Download configuration';
+$string['fileparsefailed'] = '上傳的文件無法保存為 SEB 設定檔。';
+$string['httplinkbutton'] = '下戴設定檔';
 $string['invalid_browser_key'] = "Invalid SEB browser key";
 $string['invalid_config_key'] = "Invalid SEB config key";
 $string['invalidkeys'] = "The config key or browser exam keys could not be validated. Please ensure you are using the Safe Exam Browser with correct configuration file.";
@@ -93,16 +94,16 @@ $string['seb:manage_seb_allowedbrowserexamkeys'] = '修改 SEB 考試設定: All
 $string['seb:manage_seb_allowreloadinexam'] = '修改 SEB 考試設定: 允許重新戴入';
 $string['seb:manage_seb_allowspellchecking'] = '修改 SEB 考試設定: Enable spell checking';
 $string['seb:manage_seb_allowuserquitseb'] = '修改 SEB 考試設定: 允許離開';
-$string['seb:manage_seb_enableaudiocontrol'] = '修改 SEB 考試設定: 啟用音源控制';
-$string['seb:manage_seb_expressionsallowed'] = '修改 SEB 考試設定: Simple expressions allowed';
-$string['seb:manage_seb_expressionsblocked'] = '修改 SEB 考試設定: Simple expressions blocked';
+$string['seb:manage_seb_enableaudiocontrol'] = '修改 SEB 考試設定: 啟用音頻控制';
+$string['seb:manage_seb_expressionsallowed'] = '修改 SEB 考試設定: 允許簡單的表達式';
+$string['seb:manage_seb_expressionsblocked'] = '修改 SEB 考試設定: 禁止簡單的表達式';
 $string['seb:manage_seb_filterembeddedcontent'] = '修改 SEB 考試設定: Filter embedded content';
 $string['seb:manage_seb_linkquitseb'] = '修改 SEB 考試設定: 關閉連結';
 $string['seb:manage_seb_muteonstartup'] = '修改 SEB 考試設定: Mute on startup';
 $string['seb:manage_seb_quitpassword'] = '修改 SEB 考試設定: 關閉密碼';
 $string['seb:manage_seb_regexallowed'] = '修改 SEB 考試設定: Regex expressions allowed';
 $string['seb:manage_seb_regexblocked'] = '修改 SEB 考試設定: Regex expressions blocked';
-$string['seb:manage_seb_requiresafeexambrowser'] = '修改 SEB 考試設定: Require Safe Exam Browser';
+$string['seb:manage_seb_requiresafeexambrowser'] = '修改 SEB 考試設定: 需要 Safe Exam Browser';
 $string['seb:manage_seb_showkeyboardlayout'] = '修改 SEB 考試設定: 顯示鍵盤按鍵配置';
 $string['seb:manage_seb_showreloadbutton'] = '修改 SEB 考試設定: 顯示重新戴入按鍵';
 $string['seb:manage_seb_showsebtaskbar'] = '修改 SEB 考試設定: 顯示任務欄';
@@ -110,52 +111,52 @@ $string['seb:manage_seb_showtime'] = '修改 SEB 考試設定: 顯示時間';
 $string['seb:manage_seb_showwificontrol'] = '修改 SEB 考試設定: 顯示 Wi-Fi 控制項';
 $string['seb:manage_seb_showsebdownloadlink'] = '修改 SEB 考試設定: 顯示下戴連結';
 $string['seb:manage_seb_templateid'] = '修改 SEB 考試設定: 選擇 SEB 模版';
-$string['seb:manage_seb_userconfirmquit'] = '修改 SEB 考試設定: Confirm on quit';
-$string['seb:managetemplates'] = 'Manage SEB configuration templates';
+$string['seb:manage_seb_userconfirmquit'] = '修改 SEB 考試設定: 退出時確認';
+$string['seb:managetemplates'] = '管理 SEB 設置模版';
 $string['seb_activateurlfiltering'] = 'Enable URL filtering';
 $string['seb_activateurlfiltering_help'] = 'If enabled, URLs will be filtered when loading web pages. The filter set has to be defined below.';
 $string['seb_allowedbrowserexamkeys'] = 'Allowed browser exam keys';
 $string['seb_allowedbrowserexamkeys_help'] = 'In this field you can enter the allowed browser exam keys for versions of Safe Exam Browser that are permitted to access this quiz. If no keys are entered, then browser exam keys are not checked.';
-$string['seb_allowreloadinexam'] = 'Enable reload in exam';
-$string['seb_allowreloadinexam_help'] = 'If enabled, page reload is allowed (reload button in SEB task bar, browser tool bar, iOS side slider menu, keyboard shortcut F5/cmd+R). Note that offline caching may break if a user tries to reload a page without an internet connection.';
-$string['seb_allowspellchecking'] = 'Enable spell checking';
-$string['seb_allowspellchecking_help'] = 'If enabled, spell checking in the SEB browser is allowed.';
-$string['seb_allowuserquitseb'] = 'Enable quitting of SEB';
+$string['seb_allowreloadinexam'] = '在考試中啟用重新加載';
+$string['seb_allowreloadinexam_help'] = '如果啟用，則允許頁面重新加載（SEB 任務欄、瀏覽器工具欄、iOS 側滑塊菜單、鍵盤快捷鍵 F5/cmd+R 中的重新加載按鈕）。 請注意，如果用戶嘗試在沒有互聯網連接的情況下重新加載頁面，則脫機緩存可能會中斷。';
+$string['seb_allowspellchecking'] = '開啟拼寫檢查';
+$string['seb_allowspellchecking_help'] = '如果啟用，則允許在 SEB 瀏覽器中進行拼寫檢查。';
+$string['seb_allowuserquitseb'] = ' 在SEB內啟用退出';
 $string['seb_allowuserquitseb_help'] = 'If enabled, users can quit SEB with the "Quit" button in the SEB task bar or by pressing the keys Ctrl-Q or by clicking the main browser window close button.';
-$string['seb_enableaudiocontrol'] = 'Enable audio controls';
-$string['seb_enableaudiocontrol_help'] = 'If enabled, the audio control icon is shown in the SEB task bar.';
-$string['seb_expressionsallowed'] = 'Expressions allowed';
+$string['seb_enableaudiocontrol'] = '啟用音頻控制';
+$string['seb_enableaudiocontrol_help'] = '如果啟用，音頻控製圖標將顯示在 SEB 任務欄中。';
+$string['seb_expressionsallowed'] = '允許表達式';
 $string['seb_expressionsallowed_help'] = 'A text field which contains the allowed filtering expressions for the allowed URLs. Use of the wildcard char \'\*\' is possible. Examples for expressions: \'example.com\' or \'example.com/stuff/\*\'. \'example.com\' matches \'example.com\', \'www.example.com\' and \'www.mail.example.com\'. \'example.com/stuff/\*\' matches all requests to any subdomain of \'example.com\' that have \'stuff\' as the first segment of the path.';
-$string['seb_expressionsblocked'] = 'Expressions blocked';
+$string['seb_expressionsblocked'] = '禁用表達式';
 $string['seb_expressionsblocked_help'] = 'A text field which contains the filtering expressions for the blocked URLs. Use of the wildcard char \'\*\' is possible. Examples for expressions: \'example.com\' or \'example.com/stuff/\*\'. \'example.com\' matches \'example.com\', \'www.example.com\' and \'www.mail.example.com\'. \'example.com/stuff/\*\' matches all requests to any subdomain of \'example.com\' that have \'stuff\' as the first segment of the path.';
 $string['seb_filterembeddedcontent'] = 'Filter also embedded content';
 $string['seb_filterembeddedcontent_help'] = 'If enabled, embedded resources will also be filtered using the filter set.';
-$string['seb_help'] = 'Setup quiz to use the Safe Exam Browser.';
+$string['seb_help'] = '設置測驗時只使用 Safe Exam Browser.';
 $string['seb_linkquitseb'] = 'Show Exit Safe Exam Browser button, configured with this quit link';
 $string['seb_linkquitseb_help'] = 'In this field you can enter the link to quit SEB. It will be used on an "Exit Safe Exam Browser" button on the page that appears after the exam is submitted. When clicking the button or the link placed wherever you want to put it, it is possible to quit SEB without having to enter a quit password. If no link is entered, then the "Exit Safe Exam Browser" button does not appear and there is no link set to quit SEB.';
 $string['seb_managetemplates'] = 'Manage Safe Exam Browser templates';
 $string['seb_muteonstartup'] = 'Mute on startup';
 $string['seb_muteonstartup_help'] = 'If enabled, audio is initially muted when starting SEB.';
-$string['seb_quitpassword'] = 'Quit password';
+$string['seb_quitpassword'] = '退出密碼';
 $string['seb_quitpassword_help'] = 'This password is prompted when users try to quit SEB with the "Quit" button, Ctrl-Q or the close button in the main browser window. If no quit password is set, then SEB just prompts "Are you sure you want to quit SEB?".';
-$string['seb_regexallowed'] = 'Regex allowed';
+$string['seb_regexallowed'] = '允許正則表達式';
 $string['seb_regexallowed_help'] = 'A text field which contains the filtering expressions for allowed URLs in a regular expression (Regex) format.';
-$string['seb_regexblocked'] = 'Regex blocked';
+$string['seb_regexblocked'] = '禁止正則表達式';
 $string['seb_regexblocked_help'] = 'A text field which contains the filtering expressions for blocked URLs in a regular expression (Regex) format.';
 $string['seb_requiresafeexambrowser'] = 'Require the use of Safe Exam Browser';
 $string['seb_requiresafeexambrowser_help'] = 'If enabled, students can only attempt the quiz using the Safe Exam Browser.
-The available options are:
+可用的選項有：
 
 * 否
-<br/>Safe Exam Browser is not required to attempt the quiz.
-* 是 – Use an existing template
-<br/>A template for the configuration of Safe Exam Browser can be used. Templates are managed in the site administration. Your manual settings overwrite the settings in the template.
-* 是 – Configure manually
-<br/>No template for the configuration of Safe Exam Browser will be used. You can configure Safe Exam Browser manually.
+<br/>嘗試測驗時，不需要Safe Exam Browser .
+* 是 – 使用現有模板
+<br/>可以使用 Safe Exam Browser 預設配置模板。 模板在站點管理中進行管理。 您的手動設定會覆蓋模板中的配置。
+* 是 – 手動配置
+<br/>將不會使用 Safe Exam Browser 預設配置模板。 您可以手動配置安全考試瀏覽器。
 * 是 – 上傳我的設置
-<br/>You can upload your own Safe Exam Browser configuration file. All manual settings and the use of templates will be disabled.
+<br/>您可以上傳自己的 Safe Exam Browser 配置文件。 所有手動設置和模板的使用都將被禁用。
 * 是 – 使用 SEB 客戶端的設置
-<br/>No configurations of Safe Exam Browser are on the Moodle side. The quiz can be attempted with any configuration of Safe Exam Browser.';
+<br/>Moodle 端沒有Safe Exam Browser的配置。 可以使用 Safe Exam Browser 的任何配置來嘗試進行測驗。';
 $string['seb_showkeyboardlayout'] = '顯示鍵盤按鍵配置';
 $string['seb_showkeyboardlayout_help'] = 'If enabled, the current keyboard layout is shown in the SEB task bar. It allows you to switch to other keyboard layouts, which have been enabled in the operating system.';
 $string['seb_showreloadbutton'] = '顯示重新戴入按鍵';
@@ -171,11 +172,11 @@ $string['seb_showsebdownloadlink_help'] = 'If enabled, a button for Safe Exam Br
 $string['seb_templateid'] = 'Safe Exam Browser 設置模版';
 $string['seb_templateid_help'] = 'The settings in the selected config template will be used for the configuration of the Safe Exam Browser while attempting the quiz. You may overwrite the settings in the template with your manual settings.';
 $string['seb_use_client'] = '是 – 使用 SEB 客戶端設定';
-$string['seb_use_manually'] = '是 – Configure manually';
-$string['seb_use_template'] = '是 – Use an existing template';
+$string['seb_use_manually'] = '是 – 手動配置';
+$string['seb_use_template'] = '是 – 使用現有的模板';
 $string['seb_use_upload'] = '是 – 上傳我自己的設置';
-$string['seb_userconfirmquit'] = '詢問用戶確認退出';
-$string['seb_userconfirmquit_help'] = 'If enabled, users have to confirm quitting of SEB when a quit link is detected.';
+$string['seb_userconfirmquit'] = '詢問用戶確認是否退出';
+$string['seb_userconfirmquit_help'] = '如果啟用，當檢測到退出連結時，用戶必須確認退出 SEB。';
 $string['sebdownloadbutton'] = '下戴 Safe Exam Browser';
 $string['seblinkbutton'] = '啟動 Safe Exam Browser';
 $string['sebrequired'] = "This quiz has been configured so that students may only attempt it using the Safe Exam Browser.";
