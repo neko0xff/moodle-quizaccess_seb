@@ -21,7 +21,7 @@
  * @author     Luca Bösch <luca.boesch@bfh.ch>
  * @author     Andrew Madden <andrewmadden@catalyst-au.net>
  * @author     Dmitrii Metelkin <dmitriim@catalyst-au.net>
- * @translate_zh-TW  Hsu Zangmen <neko_0xff@protonmail.com>
+ * @translate_zh-TW  neko0xff <neko_0xff@protonmail.com>
  * @copyright  2019 Catalyst IT
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -69,21 +69,21 @@ $string['managetemplates'] = '管理模板';
 $string['missingrequiredsettings'] = '配置設置缺少一些必需的值。';
 $string['name'] = '名子';
 $string['newtemplate'] = '新模版';
-$string['noconfigfilefound'] = 'No uploaded SEB config file could be found for quiz with cmid: {$a}';
-$string['noconfigfound'] = 'No SEB config could be found for quiz with cmid: {$a}';
+$string['noconfigfilefound'] = '找不到已上傳的SEB配置文件用於識別碼為:{$a}的測驗';
+$string['noconfigfound'] = '找不到SEB配置用於識別碼為:{$a}的測驗';
 $string['not_seb'] = '未使用Safe Exam Browser。';
 $string['notemplate'] = '無模版';
-$string['passwordnotset'] = 'Current settings require quizzes using the Safe Exam Browser to have a quiz password set.';
+$string['passwordnotset'] = '目前的設定要求使用Safe Exam Browser的測驗必須設置一個測驗密碼。';
 $string['pluginname'] = 'Safe Exam Browser 允許規則';
-$string['privacy:metadata:quizaccess_seb_quizsettings'] = 'Safe Exam Browser settings for a quiz. This includes the ID of the last user to create or modify the settings.';
-$string['privacy:metadata:quizaccess_seb_quizsettings:quizid'] = 'ID of the quiz the settings exist for.';
-$string['privacy:metadata:quizaccess_seb_quizsettings:timecreated'] = 'Unix time that the settings were created.';
-$string['privacy:metadata:quizaccess_seb_quizsettings:timemodified'] = 'Unix time that the settings were last modified.';
-$string['privacy:metadata:quizaccess_seb_quizsettings:usermodified'] = 'ID of user who last created or modified the settings.';
-$string['privacy:metadata:quizaccess_seb_template'] = 'Safe Exam Browser template settings. This includes the ID of the last user to create or modify the template.';
+$string['privacy:metadata:quizaccess_seb_quizsettings'] = 'Safe Exam Browser在測驗時的設定。包括最後一個建立或修改設定的使用者ID。';
+$string['privacy:metadata:quizaccess_seb_quizsettings:quizid'] = '存在這些設定的測驗ID。';
+$string['privacy:metadata:quizaccess_seb_quizsettings:timecreated'] = '建立設定的Unix時間。';
+$string['privacy:metadata:quizaccess_seb_quizsettings:timemodified'] = '上次修改設定的Unix時間。';
+$string['privacy:metadata:quizaccess_seb_quizsettings:usermodified'] = '最後一個建立或修改設定的使用者ID。';
+$string['privacy:metadata:quizaccess_seb_template'] = 'Safe Exam Browser模板設定。包括最後一個建立或修改模板的使用者ID。';
 $string['privacy:metadata:quizaccess_seb_template:timecreated'] = '創建模板時的 Unix 時間。';
 $string['privacy:metadata:quizaccess_seb_template:timemodified'] = '上次修改模板的 Unix 時間。';
-$string['privacy:metadata:quizaccess_seb_template:usermodified'] = 'ID of user who last created or modified the template.';
+$string['privacy:metadata:quizaccess_seb_template:usermodified'] = '最後一個建立或修改模板的使用者ID。';
 $string['quizsettings'] = '快速設定';
 $string['restoredfrom'] = '{$a->name} (通過cmid恢復 {$a->cmid})';
 $string['seb'] = 'Safe Exam Browser';
@@ -116,19 +116,19 @@ $string['seb:managetemplates'] = '管理 SEB 設置模版';
 $string['seb_activateurlfiltering'] = '啟用 URL 過濾';
 $string['seb_activateurlfiltering_help'] = '如果啟用，加載網頁時將過濾 URL。 過濾器組必須在下面定義。';
 $string['seb_allowedbrowserexamkeys'] = '允許的瀏覽器考試鍵';
-$string['seb_allowedbrowserexamkeys_help'] = 'In this field you can enter the allowed browser exam keys for versions of Safe Exam Browser that are permitted to access this quiz. If no keys are entered, then browser exam keys are not checked.';
+$string['seb_allowedbrowserexamkeys_help'] = '在此欄位中,您可以輸入允許訪問此測驗的Safe Exam Browser版本的瀏覽器考試密鑰。如果未輸入任何密鑰,則不會檢查瀏覽器考試密鑰。';
 $string['seb_allowreloadinexam'] = '在考試中啟用重新加載';
 $string['seb_allowreloadinexam_help'] = '如果啟用，則允許頁面重新加載（SEB 任務欄、瀏覽器工具欄、iOS 側滑塊菜單、鍵盤快捷鍵 F5/cmd+R 中的重新加載按鈕）。 請注意，如果用戶嘗試在沒有互聯網連接的情況下重新加載頁面，則脫機緩存可能會中斷。';
 $string['seb_allowspellchecking'] = '開啟拼寫檢查';
 $string['seb_allowspellchecking_help'] = '如果啟用，則允許在 SEB 瀏覽器中進行拼寫檢查。';
 $string['seb_allowuserquitseb'] = ' 在SEB內啟用退出';
-$string['seb_allowuserquitseb_help'] = 'If enabled, users can quit SEB with the "Quit" button in the SEB task bar or by pressing the keys Ctrl-Q or by clicking the main browser window close button.';
+$string['seb_allowuserquitseb_help'] = '如果啟用,使用者可以透過SEB工作列上的"退出"按鈕、按Ctrl-Q鍵或點擊主瀏覽器視窗關閉按鈕來退出SEB。';
 $string['seb_enableaudiocontrol'] = '啟用音頻控制';
 $string['seb_enableaudiocontrol_help'] = '如果啟用，音頻控製圖標將顯示在 SEB 任務欄中。';
 $string['seb_expressionsallowed'] = '允許表達式';
-$string['seb_expressionsallowed_help'] = 'A text field which contains the allowed filtering expressions for the allowed URLs. Use of the wildcard char \'\*\' is possible. Examples for expressions: \'example.com\' or \'example.com/stuff/\*\'. \'example.com\' matches \'example.com\', \'www.example.com\' and \'www.mail.example.com\'. \'example.com/stuff/\*\' matches all requests to any subdomain of \'example.com\' that have \'stuff\' as the first segment of the path.';
+$string['seb_expressionsallowed_help'] = '一個文字欄位,包含允許網址的過濾表達式。可以使用萬用字元''。表達式範例: \'example.com\' 或 \'example.com/stuff/\'。\'example.com\' 匹配 \'example.com\'、\'www.example.com\' 和 \'www.mail.example.com\'。 \'example.com/stuff/\*\' 匹配所有對 \'example.com\' 任何子域名且路徑的第一段為 \'stuff\' 的請求。';
 $string['seb_expressionsblocked'] = '禁用表達式';
-$string['seb_expressionsblocked_help'] = 'A text field which contains the filtering expressions for the blocked URLs. Use of the wildcard char \'\*\' is possible. Examples for expressions: \'example.com\' or \'example.com/stuff/\*\'. \'example.com\' matches \'example.com\', \'www.example.com\' and \'www.mail.example.com\'. \'example.com/stuff/\*\' matches all requests to any subdomain of \'example.com\' that have \'stuff\' as the first segment of the path.';
+$string['seb_expressionsblocked_help'] = '此文字欄位包含用于過濾被阻擋 URL 的過濾表达式。可以使用通配符字符 \'\*\'. 表達式範例: \'example.com\'或\'example.com/stuff/\*\'. \'example.com\'匹配 \'example.com\'、\'www.example.com\'和 \'www.mail.example.com\'。\'example.com/stuff/\*\' 匹配所有路徑的第一段為「stuff」的「example.com」任何子域的請求。';
 $string['seb_filterembeddedcontent'] = '過濾嵌入的內容';
 $string['seb_filterembeddedcontent_help'] = '如果啟用，嵌入資源也將使用過濾器集進行過濾。';
 $string['seb_help'] = '設置測驗時只使用 Safe Exam Browser.';
@@ -138,7 +138,7 @@ $string['seb_managetemplates'] = '管理Safe Exam Browser模板';
 $string['seb_muteonstartup'] = '啟動時靜音';
 $string['seb_muteonstartup_help'] = '如果啟用，啟動 SEB 時音頻最初會靜音。';
 $string['seb_quitpassword'] = '退出密碼';
-$string['seb_quitpassword_help'] = 'This password is prompted when users try to quit SEB with the "Quit" button, Ctrl-Q or the close button in the main browser window. If no quit password is set, then SEB just prompts "Are you sure you want to quit SEB?".';
+$string['seb_quitpassword_help'] = '當使用者嘗試使用「退出」按鈕、Ctrl-Q 或主瀏覽器窗口的關閉按鈕退出 SEB 時，會提示此密碼。如果未设置退出密码，则 SEB 只會提示「您確定要退出 SEB 嗎？」。';
 $string['seb_regexallowed'] = '允許正則表達式';
 $string['seb_regexallowed_help'] = '包含正則表達式 (Regex) 格式的允許 URL 的過濾表達式的文本字段。';
 $string['seb_regexblocked'] = '禁止正則表達式';
@@ -158,19 +158,19 @@ $string['seb_requiresafeexambrowser_help'] = '如果啟用，學生只能使用S
 * 是 – 使用 SEB 客戶端的設置
 <br/>Moodle 端沒有Safe Exam Browser的配置。 可以使用 Safe Exam Browser 的任何配置來嘗試進行測驗。';
 $string['seb_showkeyboardlayout'] = '顯示鍵盤按鍵配置';
-$string['seb_showkeyboardlayout_help'] = 'If enabled, the current keyboard layout is shown in the SEB task bar. It allows you to switch to other keyboard layouts, which have been enabled in the operating system.';
+$string['seb_showkeyboardlayout_help'] = '如果啟用,當前的鍵盤佈局會顯示在SEB工作列上。它允許您切換到在作業系統中啟用的其他鍵盤佈局。';
 $string['seb_showreloadbutton'] = '顯示重新戴入按鍵';
-$string['seb_showreloadbutton_help'] = 'If enabled, a reload button is displayed in the SEB task bar, allowing the current web page to be reloaded.';
+$string['seb_showreloadbutton_help'] = '如果啟用,SEB工作列上將顯示一個重新載入按鈕,允許重新載入目前的網頁。';
 $string['seb_showsebtaskbar'] = '顯示 SEB 任務欄';
-$string['seb_showsebtaskbar_help'] = 'If enabled, a task bar appears at the bottom of the SEB browser window. The task bar is required to display items such as Wi-Fi control, reload button, time and keyboard layout.';
+$string['seb_showsebtaskbar_help'] = '若啟用，工作列將出現在 SEB 瀏覽器窗口的底部。工作列用於顯示項目，例如 Wi-Fi 控制、重新載入按鈕、時間和鍵盤配置。';
 $string['seb_showtime'] = '顯示時間';
 $string['seb_showtime_help'] = '如果啟用，當前時間將顯示在 SEB 任務欄中。';
 $string['seb_showwificontrol'] = '顯示 Wi-Fi 控制項';
-$string['seb_showwificontrol_help'] = 'If enabled, a Wi-Fi control button appears in the SEB task bar. The button allows users to reconnect to Wi-Fi networks which have previously been connected to.';
+$string['seb_showwificontrol_help'] = '如果啟用,SEB工作列上將顯示一個Wi-Fi控制按鈕。該按鈕允許使用者重新連線至先前連線過的Wi-Fi網路。';
 $string['seb_showsebdownloadlink'] = '顯示 Safe Exam Browser 下戴按鈕';
 $string['seb_showsebdownloadlink_help'] = '如果啟用，則測驗開始頁面上將顯示Safe Exam Browser下載按鈕。';
 $string['seb_templateid'] = 'Safe Exam Browser 設置模版';
-$string['seb_templateid_help'] = 'The settings in the selected config template will be used for the configuration of the Safe Exam Browser while attempting the quiz. You may overwrite the settings in the template with your manual settings.';
+$string['seb_templateid_help'] = '嘗試測驗時,將使用所選配置範本中的設定來配置安全考試瀏覽器。您可以使用手動設定來覆蓋範本中的設定。';
 $string['seb_use_client'] = '是 – 使用 SEB 客戶端設定';
 $string['seb_use_manually'] = '是 – 手動配置';
 $string['seb_use_template'] = '是 – 使用現有的模板';
